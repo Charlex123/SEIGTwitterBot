@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style0.css">
+    <title>SEIG-BOT</title>
+    <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <!-- header -->
+      <header>
+        <!-- <div class="cola">
+          <a href="#"><img src="pictures/logo.png" class="logo_img" alt="oui"></a>
+        </div> -->
+        <div class="title">
+          <h1><i class="fa-solid fa-list-check"></i> Tasks</h1>
+        </div>
+        <div class="gridaaa" id="close">
+          <i class="fa-solid fa-xmark cursor-pointer"></i>
+        </div>
+      </header>
+      <!-- header ends -->
+
+      <div class="main-wrap">
+        <!--nav-->
+        <div class="navapp">
+          <!--logo-->
+          <!-- <div class="col-1 h-25 mw-100 d-flex align-items-center text-center">
+            <a href="#"><img src="pictures/logo.png" class="w-75" alt="oui"></a>
+          </div> -->
+
+          <!--Menu-->
+
+          <div class="cola hover hover-el">
+            <div class="nav-el bp">
+              <div class="couleur ">
+              </div>
+              <a href="bot_management.html" class="nav-text centrer panel p-2">
+                <i class="fa-solid fa-list-check"></i> Accounts
+              </a>
+            </div>
+          </div>
+          <div class="cola hover hover-el">
+            <div class="nav-el tk">
+              <div class="couleur">
+              </div>
+              <a href="Giveaways.html" class="nav-text centrer tasks p-2">
+                <i class="fa-solid fa-list-check"></i> Tasks
+              </a>
+            </div>
+          </div>
+          <div class="cola hover hover-el">
+            <div class="nav-el nf">
+              <div class="couleur">
+              </div>
+              <a href="Notifications.html" class="nav-text centrer notif p-2">
+                <i class="fa-solid fa-envelope-open-text"></i> Notifications
+              </a>
+            </div>
+          </div>
+          <div class="cola hover hover-el">
+            <div class="nav-el ha">
+              <div class="couleur">
+              </div>
+              <a href="Human_activity.html" class="nav-text centrer human p-2">
+                <i class="fa-solid fa-people-carry-box"></i> Human Activity
+              </a>
+            </div>
+          </div>
+          <div class="colla hover hover-el">
+            <div class="nav-el st">
+              <div class="couleur">
+              </div>
+              <a href="Settings.html" class="nav-text centrer h-100 p-2">
+                <i class="fa-solid fa-gear"></i> Settings
+              </a>
+            </div>
+          </div>
+          <!-- menu ends -->
+          
+        </div>
+        <!-- navapp ends -->
+
+        <!--Main-->
+        <div class="cola main">
+
+          <div class="corps">
+            <div class="gridaa">
+              <div class="driote-title">
+                <div class="container droite">
+                  <h2>Recent tasks</h2>
+                  <div class="list">
+                    <div class="cont_liste" id="list_all_giveways"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="add-acc">
+                <div class="container">
+                  <div class="add-new">
+                    <h2>Add New tasks</h2>
+                    <form>
+                      <div class="form-group">
+                        <p for="linkInput" class="blanc">Enter link</p>
+                        <input type="link" class="form-control" id="linkInput" aria-describedby="" placeholder="Enter link">
+                        <small id="emailHelp" class="form-text text-muted pl-2 red"></small>
+                      </div>
+                      <div>
+                        <input type="button" class="addbtn submit" id="btn_valide_giveway" value="Submit" />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="oui" id="Settings_menu">
+                <a href="#" id="croix_settings"><img src="pictures/croix.png" alt="croix"></a>
+                <h2>Giveaway options</h2>
+                <div class="container">
+                  <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="customSwitches" checked="">
+                    <label class="custom-control-label" for="customSwitches">Retweet</label>
+                  </div>
+                  <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="switch1" checked="">
+                    <label class="custom-control-label" for="switch1">Like</label>
+                  </div>
+
+                  <div class="">
+
+                    <div class="people_to_tag">
+                      <select class="form-control" title="select" id="exampleFormControlSelect1">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
+                      <p>People to tag</p>
+
+                    </div>
+
+                  </div>
+                  <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="switch2">
+                    <label class="custom-control-label" for="switch2">Add text</label>
+                  </div>
+                  <input type="link" class="form-control zero" id="hashtagsInput" aria-describedby="" placeholder="Enter texts, format as text1;text2;ect">
+                  <p class="pt-2">Mentions to follow</p>
+                  <div class="container w-100" id="list_to_follow">
+
+                  </div>
+                  <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="flash_giveaways_s">
+                    <label class="custom-control-label" for="flash_giveaways_s">Flash Giveaway</label>
+                  </div>
+                  <div class="centrer pt-3">
+                    <input type="button" class="btn btn-primary" id="add_giveway_btn" value="Start!" />
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- main ends -->
+      </div>
+      <!-- main wrap end -->
+
+        <div class="footer">
+          <div>powered by SEIG Robotics</div>
+          <div class="version">
+            <p id="actual_version"></p>
+          </div>
+        </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/common/ipc.js"></script>
+  <script>
+    window.$ = window.jQuery = require('jquery');
+    window.$ = $.extend(require('jquery-ui-bundle'));
+
+  </script>
+  <script type="text/javascript" src="js/giveways_page/giveways_page.js"></script>
+  <script type="text/javascript" src="../backend/models/GiveAway.js"></script>
+  <script type="text/javascript" src="js/giveways_page/display_giveways_history.js"></script>
+  <script type="text/javascript" src="js/giveways_page/set_new_giveways.js"></script>
+  <script type="text/javascript" src="js/common/close_minimise.js"></script>
+  <script type="text/javascript" src="js/common/version.js"></script>
+
+  </script>
+
+</html>

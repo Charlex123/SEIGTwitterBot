@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style0.css">
+    <title>SEIG-BOT</title>
+    <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div class="overlay_bg"></div>
+    <div class="container-fluid">
+
+      <!-- header -->
+      <header>
+        <!-- <div class="cola">
+          <a href="#"><img src="pictures/logo.png" class="logo_img" alt="oui"></a>
+        </div> -->
+        <div class="title">
+          <h1><i class="fa-solid fa-users"></i> Accounts</h1>
+        </div>
+        <div class="gridaaa" id="close">
+           <i class="fa-solid fa-xmark cursor-pointer"></i>
+        </div>
+      </header>
+      <!-- header ends -->
+
+      <div class="main-wrap">
+        <!--nav-->
+        <div class="navapp">
+          <!--logo-->
+          
+          <!--Menu-->
+          <div class="cola hover hover-el">
+            <div class="nav-el bp">
+              <div class="couleur">
+              </div>
+              <a href="#" class="nav-text centrer panel p-2">
+                <i class="fa-solid fa-dashboard"></i> Accounts
+              </a>
+            </div>
+          </div>
+          <div class="cola hover hover-el">
+            <div class="nav-el tk">
+              <div class="couleur">
+              </div>
+              <a href="Giveaways.html" class="nav-text centrer tasks p-2">
+                <i class="fa-solid fa-list-check"></i> Tasks
+              </a>
+            </div>
+          </div>
+          <div class="cola hover hover-el">
+            <div class="nav-el nf">
+              <div class="couleur">
+              </div>
+              <a href="Notifications.html" class="nav-text centrer notif p-2">
+                <i class="fa-solid fa-envelope-open-text"></i> Notifications
+              </a>
+            </div>
+          </div>
+          <div class="cola hover hover-el">
+            <div class="nav-el ha">
+              <div class="couleur">
+              </div>
+              <a href="Human_activity.html" class="nav-text centrer human p-2">
+                <i class="fa-solid fa-people-carry-box"></i> Human Activity
+              </a>
+            </div>
+          </div>
+          <div class="cola hover hover-el">
+            <div class="nav-el st">
+              <div class="couleur">
+              </div>
+              <a href="Settings.html" class="nav-text centrer settings p-2">
+                <i class="fa-solid fa-gear"></i> Settings
+              </a>
+            </div>
+          </div>
+
+          <!-- menu ends -->
+          
+        </div>
+
+        <!-- nav ends -->
+
+        <!--Main-->
+        <div class="cola main">
+          
+          <!-- <div class="cola haut-main "></div> -->
+
+          <div class="corps">
+            <div class="gridaa">
+              <div class="driote-title">
+                <div class="container droite">
+                  <h2>Added Accounts</h2>
+                  <div class="list">
+                    <div class="cont_liste" id="all_bots">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="add-acc">
+                <div class="container">
+                  <div class="add-new">
+                    <h2><i class="fa-solid fa-user-plus"></i> Add new account</h2>
+                    <div class="addnewform-div">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="proxyauth" placeholder="Proxy auth (username:password)">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="proxyhost" placeholder="Proxy ip/port (http://xxx.xxx.xxx:0000)">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="twitter_username" placeholder="Twitter username">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="twitter_password" placeholder="Twitter password">
+                        <small id="erreurs" class="form-text text-muted pl-2 w-100 red"></small>
+  
+                      </div>
+                      <p>
+                        <input type="button" name="" class="addbtn addnewacc" id="btn_new_user_proxy" value="Add">
+                      </p>
+                    </div>
+                      <!-- <h2 class="pb-2 pl-2">Need twitter account ?</h2>
+                      <p>
+                        <input type="button" name="" class="btn btn-success " value="Buy twitter account">
+                      </p>-->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- main end -->
+
+      </div>
+      <!-- main wrap ends -->
+      <div class="footer">
+        <div>powered by SEIG Robotics</div> 
+        <div class="version">
+          <p id="actual_version"></p>
+        </div>
+      </div>
+
+      </div>
+      <!-- container fluid ends -->
+      
+  </body>
+  <script type="text/javascript" src="js/common/ipc.js"></script>
+  <script>
+    window.$ = window.jQuery = require('jquery');
+    window.$ = $.extend(require('jquery-ui-bundle'));
+
+  </script>
+  <script type="text/javascript" src="js/bot_page/display_bot.js"></script>
+  <script type="text/javascript" src="js/bot_page/add_bot.js"></script>
+
+  <script type="text/javascript" src="js/common/close_minimise.js"></script>
+  <script type="text/javascript" src="js/common/version.js"></script>
+
+
+</html>

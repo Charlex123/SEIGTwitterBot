@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style0.css">
+  <title>SEIG-BOT</title>
+  <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- header -->
+    <header>
+      <!-- <div class="cola">
+        <a href="#"><img src="pictures/logo.png" class="logo_img" alt="oui"></a>
+      </div> -->
+      <div class="title">
+        <h1><i class="fa-brands fa-twitter"></i> Post Tweet</h1>
+      </div>
+      <div class="gridaaa" id="close">
+        <i class="fa-solid fa-xmark cursor-pointer"></i>
+      </div>
+    </header>
+    <!-- header ends -->
+
+    <div class="main-wrap">
+      <!--nav-->
+      <div class="navapp">
+        <!--logo-->
+        <!-- <div class="col-1 h-25 mw-100 d-flex align-items-center text-center">
+          <a href="#"><img src="pictures/logo.png" class="w-75" alt="oui"></a>
+        </div> -->
+
+        <!--Menu-->
+
+        <div class="cola hover hover-el">
+          <div class="nav-el bp">
+            <div class="couleur ">
+            </div>
+            <a href="bot_management.html" class="nav-text centrer panel p-2">
+              <i class="fa-solid fa-list-check"></i> Accounts
+            </a>
+          </div>
+        </div>
+        <div class="cola hover hover-el">
+          <div class="nav-el tk">
+            <div class="couleur">
+            </div>
+            <a href="Giveaways.html" class="nav-text centrer tasks p-2">
+              <i class="fa-solid fa-list-check"></i> Tasks
+            </a>
+          </div>
+        </div>
+        <div class="cola hover hover-el">
+          <div class="nav-el nf">
+            <div class="couleur">
+            </div>
+            <a href="Notifications.html" class="nav-text centrer notif p-2">
+              <i class="fa-solid fa-envelope-open-text"></i> Notifications
+            </a>
+          </div>
+        </div>
+        <div class="cola hover hover-el">
+          <div class="nav-el ha">
+            <div class="couleur">
+            </div>
+            <a href="Human_activity.html" class="nav-text centrer human p-2">
+              <i class="fa-solid fa-people-carry-box"></i> Human Activity
+            </a>
+          </div>
+        </div>
+        <div class="colla hover hover-el">
+          <div class="nav-el st">
+            <div class="couleur">
+            </div>
+            <a href="Settings.html" class="nav-text centrer h-100 p-2">
+              <i class="fa-solid fa-gear"></i> Settings
+            </a>
+          </div>
+        </div>
+        <!-- menu ends -->
+      </div>
+
+      <!-- navapp ends -->
+
+      <!--Main-->
+      <div class="cola main ">
+        
+        <div class="corps">
+          <div class="container">
+                <div class="gridaa">
+                  <div id="humanActivityLeftBlock" class="driote">
+                    <div class="centrer driote-title">
+                      <h2>Send/Post Tweet</h2>
+                      <div class="div_select">
+                        <p class="text-left">Select Account </p>
+                        <div class="centrer">
+                          <select class="form-control" title="select" id="selectAccount"> 
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="add-new">
+                      <h3>Tweet content</h3>
+                      <p id="tweetContentDescription" class="mb-1">With this feature you can post individual tweets. Choose your account and insert a text which the account should post.</p>
+                      <textarea class="textarea" name="name" title="enter text"  id="texttweet"></textarea>
+                      <div class="center mt-4">
+                          <button type="button" class="addbtn sendtweet" id="validerTweetAccount">Send</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="add-new container vfollow">
+                    <h2>Make every included account follow each other</h2>
+                    <button type="button" title="button" class="addbtn follow" id="followEachOther">Follow</button>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- main wrap ends -->
+      <div class="footer">
+        <div>powered by SEIG Robotics</div>
+        <div class="version">
+          <p id="actual_version"></p>
+        </div>
+      </div>
+
+    </div>
+    <!-- container fluid ends -->
+  </body>
+  <script type="text/javascript" src="js/common/ipc.js"></script>
+  <script>
+    window.$ = window.jQuery = require('jquery');
+
+  </script>
+  <script type="text/javascript" src="js/hm/hm.js"></script>
+
+<script type="text/javascript" src="js/notif_page/pagination.js"></script>
+<!--a changer -->
+<script type="text/javascript" src="js/common/close_minimise.js"></script>
+<script type="text/javascript" src="js/common/version.js"></script>
+
+</html>

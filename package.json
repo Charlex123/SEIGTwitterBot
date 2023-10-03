@@ -1,0 +1,77 @@
+{
+  "name": "SEIGTwitterBotProxy",
+  "version": "3.0.0-preRelease-1",
+  "license": "MIT",
+  "description": "SEIG Robotics Twitter Bot",
+  "homepage": "https://seigrobotics.com/",
+  "author": "Sebastian Seigfried <basti.sei@hotmail.de>",
+  "main": "backend/main.js",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "watch": "nodemon --watch . --exec \"electron .\" -e *",
+    "start": "electron .",
+    "obfuscate": "javascript-obfuscator frontend --output frontend && javascript-obfuscator backend --output backend",
+    "app:pack": "dotenv -e .env -- electron-builder --dir",
+    "app:publish": "dotenv -e .env -- electron-builder --publish=always",
+    "test": "node ."
+  },
+  "build": {
+    "appId": "SEIG BOT Proxy",
+    "productName": "SEIG Twitter BOT Proxy",
+    "publish": [
+      {
+        "provider": "github",
+        "repo": "SEIG-BOT-UPDATE-PROXY",
+        "owner": "bastisei",
+        "host": "github.com",
+        "releaseType": "draft"
+      }
+    ],
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS"
+    }
+  },
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1",
+    "electron-store": "^8.1.0",
+    "electron-updater": "^6.1.4",
+    "firebase-admin": "^11.11.0",
+    "jquery": "^3.7.1",
+    "jquery-ui-bundle": "^1.12.1-migrate",
+    "puppeteer": "^21.3.5",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "request": "^2.88.2",
+    "twitter-lite": "^1.1.0"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^6.0.0",
+    "electron": "^26.2.2",
+    "electron-builder": "^24.6.4",
+    "javascript-obfuscator": "^4.1.0",
+    "nodemon": "^3.0.1"
+  }
+}

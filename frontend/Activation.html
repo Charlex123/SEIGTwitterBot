@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/smallstyle.css">
+    <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Activate</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <!-- header -->
+      <header>
+        <!-- <div class="cola">
+          <a href="#"><img src="pictures/logo.png" class="logo_img" alt="oui"></a>
+        </div> -->
+        <div class="title">
+          <i class="fa-solid fa-lock-open"></i> Sign In
+        </div>
+        <div class="gridaaa text-white" id="close">
+           <i class="fa-solid fa-xmark cursor-pointer"></i>
+        </div>
+      </header>
+      <!-- header ends -->
+
+      <div class="maina">
+        
+        <div class="corps">
+          <form>
+            <div class="form-group">
+              <label class="text-left" for="username">
+                Username
+              </label>
+              <input type="text" class="form-control" name="username" id="username" placeholder="Username" value="">
+            </div>
+            <div class="form-group">
+              <label class="text-left" for="password">Password</label>
+              <input type="password" class="form-control" name="password" id="password" placeholder="Password" value="">
+            </div>
+            <small id="erreurs" class="form-text text-muted pl-2 w-100 red text-capitalize"></small>
+            <div class="activate_btns">
+              <button type="button" class="addbtn login" id="btn_valider_key">Submit</button>
+              <button type="button" class="addbtn resetpassword" id="btn_reset_pwd">Reset Password</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/activation.js"></script>
+  <script type="text/javascript" src="js/common/close_minimise.js"></script>
+</html>
