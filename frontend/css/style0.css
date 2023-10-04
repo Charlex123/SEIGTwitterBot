@@ -189,20 +189,20 @@ a.nav-text.centrer:hover {
   text-transform: capitalize;font-weight: bolder;font-size: 14px;color: #070101;width: 100% !important;
 }
 .addbtn.addnewacc {
-  background-color: orangered !important;margin-top: 1rem;border-radius: 60px;padding: 8px 10px;
+  background-color: orangered !important;margin-top: 0;border-radius: 60px;padding: 8px 10px;
   text-transform: capitalize;font-weight: bolder;font-size: 14px;color: #070101;width: 100% !important;
 }
 .addbtn.submit {
-  background-color: orangered !important;margin-top: 1rem;border-radius: 60px;padding: 8px 10px;
+  background-color: orangered !important;margin-top: 0;border-radius: 60px;padding: 8px 10px;
   text-transform: capitalize;font-weight: bolder;font-size: 14px;color: #070101;width: 100% !important;
 }
 .addbtn.follow {
-  background-color: orangered !important;margin-top: 0;border-radius: 60px;padding: 8px 6px;height: fit-content !important;
-  text-transform: capitalize;font-weight: bolder;font-size: 14px;color: #070101;width: 100% !important;
+  background-color: orangered !important;margin-top: 0;border-radius: 60px;padding: 5px 20px;height: fit-content !important;
+  text-transform: capitalize;font-weight: bolder;font-size: 14px;color: #070101;width: auto !important;
 }
 .addbtn.sendtweet {
-  background-color: rgb(235, 142, 108) !important;margin-top: 3rem;border-radius: 60px;padding: 8px 100px;height: fit-content !important;
-  text-transform: capitalize;font-weight: bolder;font-size: 14px;color: #070101;width: auto !important;margin: auto !important;
+  background-color: rgb(235, 142, 108) !important;margin-top: 0 !important;border-radius: 60px;padding: 8px 40px;height: fit-content !important;
+  text-transform: capitalize;font-weight: bolder;font-size: 14px;color: #070101;width: 100% !important;
   text-align: center !important;
 }
 .addbtn.checknotif {
@@ -371,7 +371,7 @@ h1 {
   margin-top: 1rem;
   padding-right: 5px;
   border-radius: 8px;
-  background-color: #a5cae049 ;
+  background-color: #0e2431 ;
   /* box-shadow: 1px 1px 2px 2px #585858 !important; */
 }
 
@@ -412,7 +412,7 @@ h1 {
 }
 
 .main .el-list {
-  background-color: #0e2431;
+  background-color: #c8cfd341;
   height: auto;padding: 2px 3px 3px 3px !important;
   display: flex;margin: 4px 5px 4px 5px !important;
   justify-content: space-between;
@@ -422,7 +422,7 @@ h1 {
 
 .main .el-liste {
   color: white;
-  display: flex;
+  display: flex;margin-top: 2px;
   align-items: center;width: 100% !important;
   justify-content: space-between;
 }
@@ -694,14 +694,17 @@ a {
   flex-direction: column;
   justify-content: center;
 }
+.corps.key h2 {
+  margin-bottom: 1.5rem;font-size: 14px;padding-top: 10px;font-weight: 600;text-transform: uppercase;
+}
 .settings-options {
-  margin-bottom: 30px;vertical-align: auto;
+  margin-bottom: 15px;vertical-align: auto;
 }
 .settings-options p {
   color: white !important;z-index: 1;
 }
 .settings-options.key h2 {
-  margin-bottom: 1rem;font-size: 14px;padding-top: 10px;font-weight: 600;text-transform: uppercase;
+  margin-bottom: 2rem;font-size: 14px;padding-top: 10px;font-weight: 600;text-transform: uppercase;
 }
 
 .settings-options .key {
@@ -724,9 +727,9 @@ a {
   font-weight: 600;outline: none !important;
 }
 .settings-options .autour_key {
-  height: 45px;
-  margin-left: 20px;
-  margin-right: 20px;
+  height: 35px;
+  margin-left: 0;
+  margin-right: 0;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 5px;
@@ -757,6 +760,27 @@ a {
 }
 .settings-options.webhook h2 {
   margin-bottom: 10px;background-color: #1e37466b;font-size: 14px;font-weight: 600;padding: 8px;
+}
+.tweetpdiv {
+  position: relative;
+}
+.tweetbtns {
+  display: flex;justify-content: space-evenly;position: relative;
+}
+.sendinfo {
+  position: absolute;right: 170px;top: 38px;;
+}
+.sendinfo .fa-regular {
+  color: orangered;cursor: pointer !important;z-index: 5;
+}
+.sendinfo .info_t {
+  display: none;background-color: #1e37466b;color: #c9c3c3;width: 250px;position: absolute;bottom: 40px;
+  border-radius: 4px;padding: 5px;right: -45px;font-size: 14px;
+}
+.sendinfo .info_t::after {
+  position: absolute;content: "";
+  border-bottom: 10px solid transparent;border-top: 10px solid #1e37466b;top: 100%;bottom: 0;
+  border-left: 10px solid transparent;border-right: 10px solid transparent;
 }
 input::active,button::active,textarea::active {
   outline: none !important;
@@ -897,9 +921,11 @@ input::-moz-focus-inner {
 .display-flex {
   display: flex;
 }
-
+.select_acc_p {
+  position: relative;display: flex;justify-content: space-between;align-items: center;vertical-align: auto;
+}
 .div_select {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem;width: 75%;
 }
 .div_select p {
   color: white;margin: 1rem 0 0 0;
@@ -908,7 +934,9 @@ input::-moz-focus-inner {
   width: 100% !important;color: #c9c3c3 !important;background-color: #0e2431 !important;
   border: none;padding: 10px 10px 10px 10px !important;
 }
-
+.f_btn {
+  margin-top: 1rem;width: auto;margin-right: 0 !important;
+}
 .vertBtn {
   height: 30px;
   padding-top: 0;
@@ -992,6 +1020,6 @@ select:focus {
   color: white
 }
 .footer {
-  font-family: "Poppins", sans-serif;text-transform: capitalize;color: #7c7b7b;font-size: 16px;
+  font-family: "Poppins", sans-serif;color: #7c7b7b;font-size: 16px;
   margin: auto !important;text-align: center !important;width: 100%;display: flex;justify-content: space-around;
 }

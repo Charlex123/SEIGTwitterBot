@@ -42,7 +42,7 @@
             <div class="couleur ">
             </div>
             <a href="bot_management.html" class="nav-text centrer panel p-2">
-              <i class="fa-solid fa-list-check"></i> Accounts
+              <i class="fa-solid fa-dashboard"></i> Accounts
             </a>
           </div>
         </div>
@@ -92,15 +92,23 @@
         
         <div class="corps">
           <div class="container">
-                <div class="gridaa">
+                <div class="gridaaaa">
                   <div id="humanActivityLeftBlock" class="driote">
                     <div class="centrer driote-title">
                       <h2>Send/Post Tweet</h2>
-                      <div class="div_select">
-                        <p class="text-left">Select Account </p>
-                        <div class="centrer">
-                          <select class="form-control" title="select" id="selectAccount"> 
-                          </select>
+                      <div class="select_acc_p">
+                        <div class="div_select">
+                          <p class="text-left">Select Account </p>
+                          <div class="centrer">
+                            <select class="form-control" title="select" id="selectAccount"></select>
+                          </div>
+                        </div>
+                        <div class="f_btn">
+                          <button type="button" title="button" class="addbtn follow" id="followEachOther">Follow Each Other</button>
+                          <div class="sendinfo">
+                            <div class="info_t" id="info_t">Make every included account follow each other</div>
+                            <i class="fa-regular fa-circle-question"></i>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -109,14 +117,10 @@
                       <h3>Tweet content</h3>
                       <p id="tweetContentDescription" class="mb-1">With this feature you can post individual tweets. Choose your account and insert a text which the account should post.</p>
                       <textarea class="textarea" name="name" title="enter text"  id="texttweet"></textarea>
-                      <div class="center mt-4">
+                      <div class="center mt-3">
                           <button type="button" class="addbtn sendtweet" id="validerTweetAccount">Send</button>
                       </div>
                     </div>
-                  </div>
-                  <div class="add-new container vfollow">
-                    <h2>Make every included account follow each other</h2>
-                    <button type="button" title="button" class="addbtn follow" id="followEachOther">Follow</button>
                   </div>
                 </div>
           </div>

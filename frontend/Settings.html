@@ -86,89 +86,87 @@
 
         <!--Main-->
         <div class="cola main settings">
-          <div class="corps">
-            <div class="container">
-              <div class="droite">
-                <div class="settings-options key">
-                  <h2>My key</h2>
-                  <div class="autour_key">
-                    <div class="key">
-                      <p class="centrer" id="clef_affichage">Key</p>
-                      <button type="button" class="addbtn clear" id="btn_delete_key">delete key</button>
-                    </div>
+          <div class="corps key">
+            <h2>My key</h2>
+            <div class="droite">
+              <div class="settings-options">
+                <div class="autour_key">
+                  <div class="key">
+                    <p class="centrer" id="clef_affichage">Key</p>
+                    <button type="button" class="addbtn clear" id="btn_delete_key">delete key</button>
                   </div>
                 </div>
-                <div class="settings-options">
-                  <h2>Tasks speed option</h2>
-                  <div class="">
-                    <div class="el-goptionsall">
-                      <div class="demi">
-                        <div class="el-goptions">
-                          <p>Cooldown beetwen tasks</p>
-                          <input type="number" title="input" class="task_cooldown" id="task_cooldown" value="" max="9999"><span class="timer-s">s</span>
-                          <p>  | Flash tasks </p>
-                          <input type="number" title="input" class="flash_task_cooldown" id="flash_task_cooldown" value="" max="9999"><span class="timer-s">s</span>
-                        </div>
-                        <small id="Tokenhelp" class="form-text">to avoid ban a minimum of 190s is recommended</small>
+              </div>
+              <div class="settings-options">
+                <h2>Tasks speed option</h2>
+                <div class="">
+                  <div class="el-goptionsall">
+                    <div class="demi">
+                      <div class="el-goptions">
+                        <p>Cooldown beetwen tasks</p>
+                        <input type="number" title="input" class="task_cooldown" id="task_cooldown" value="" max="9999"><span class="timer-s">s</span>
+                        <p>  | Flash tasks </p>
+                        <input type="number" title="input" class="flash_task_cooldown" id="flash_task_cooldown" value="" max="9999"><span class="timer-s">s</span>
                       </div>
-                      <div class="display-flex">
-                        <div class="form-check mr-4">
-                          <input type="checkbox" class="form-check-input " id="bots_headless">
-                          <label class="form-check-label" for="bots_headless">Bots headless</label>
-                        </div>
-                        <div class="form-check mr-3">
-                          <input type="checkbox" class="form-check-input" id="tasks_headless">
-                          <label class="form-check-label" for="tasks_headless">Tasks headless</label>
-                        </div>
+                      <small id="Tokenhelp" class="form-text">to avoid ban a minimum of 190s is recommended</small>
+                    </div>
+                    <div class="display-flex">
+                      <div class="form-check mr-4">
+                        <input type="checkbox" class="form-check-input " id="bots_headless">
+                        <label class="form-check-label" for="bots_headless">Bots headless</label>
+                      </div>
+                      <div class="form-check mr-3">
+                        <input type="checkbox" class="form-check-input" id="tasks_headless">
+                        <label class="form-check-label" for="tasks_headless">Tasks headless</label>
                       </div>
                     </div>
-                    <div class="el-goptionsall ">
-                      <div class="demi">
-                        <div class="el-goptions">
-                          <p>Cooldown between account</p>
-                          <input type="number" title="input" class="acc_cooldown" id="account_cooldown" value="" max="9999"><span>s</span>
-                          <p> | Flash tasks </p>
-                          <input type="number" title="input" class="flash_acc_cooldown" id="flash_account_cooldown" value="" max="9999"><span>s</span>
-                        </div>
-                        <small class="form-text">to avoid ban a minimum of 50s is recommended</small>
+                  </div>
+                  <div class="el-goptionsall ">
+                    <div class="demi">
+                      <div class="el-goptions">
+                        <p>Cooldown between account</p>
+                        <input type="number" title="input" class="acc_cooldown" id="account_cooldown" value="" max="9999"><span>s</span>
+                        <p> | Flash tasks </p>
+                        <input type="number" title="input" class="flash_acc_cooldown" id="flash_account_cooldown" value="" max="9999"><span>s</span>
                       </div>
-                      <div class="display-flex">
-                        <div class="form-check mr-3">
-                          <input type="checkbox" class="form-check-input" id="notifs_headless">
-                          <label class="form-check-label" for="notifs_headless">Notifs headless</label>
-                        </div>
-                        <div class="form-check mr-3">
-                          <input type="checkbox" class="form-check-input" id="human_headless">
-                          <label class="form-check-label" for="human_headless">Human headless</label>
-                        </div>
+                      <small class="form-text">to avoid ban a minimum of 50s is recommended</small>
+                    </div>
+                    <div class="display-flex">
+                      <div class="form-check mr-3">
+                        <input type="checkbox" class="form-check-input" id="notifs_headless">
+                        <label class="form-check-label" for="notifs_headless">Notifs headless</label>
+                      </div>
+                      <div class="form-check mr-3">
+                        <input type="checkbox" class="form-check-input" id="human_headless">
+                        <label class="form-check-label" for="human_headless">Human headless</label>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="settings-options webhook">
-                      <h2>Webhooks notifications</h2>
-                      <div class="">
-                        <div class="el-goptionsall">
-                          <div class="b" id="webhook_div">
-                            <p>Enter the webhook url</p>
-                            <div class="input-group mb-2">
-                              <input type="text" class="form-control" id="input_webhooks" placeholder="Webhook url">
-                              <div class="input-group-append">
-                                <button class="webhookbtn" type="button" id="test_webhook">Test</button>
-                              </div>
+                  <div class="settings-options webhook">
+                    <h2>Webhooks notifications</h2>
+                    <div class="">
+                      <div class="el-goptionsall">
+                        <div class="b" id="webhook_div">
+                          <p>Enter the webhook url</p>
+                          <div class="input-group mb-2">
+                            <input type="text" class="form-control" id="input_webhooks" placeholder="Webhook url">
+                            <div class="input-group-append">
+                              <button class="webhookbtn" type="button" id="test_webhook">Test</button>
                             </div>
                           </div>
                         </div>
+                      </div>
 
-                        <div class="button-settings">
-                          <button type="button" class="addbtn save" id="btn_save_settings">Save</button>
-                          <button type="button" class="addbtn reset" id="btn_reset_settings">Reset</button>
-                        </div>
+                      <div class="button-settings">
+                        <button type="button" class="addbtn save" id="btn_save_settings">Save</button>
+                        <button type="button" class="addbtn reset" id="btn_reset_settings">Reset</button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- settings ends -->
               </div>
+              <!-- settings ends -->
             </div>
           </div>
         </div>

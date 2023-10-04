@@ -42,3 +42,11 @@ $("#validerTweetAccount").on("click", () => {
     text: text,
   });
 });
+
+$(".fa-circle-question").on('mouseenter',function(){
+  this.previousElementSibling.style.display = 'block';
+})
+
+$(".fa-circle-question").on('mouseout',function(){
+  this.previousElementSibling.style.display = 'none';
+})
